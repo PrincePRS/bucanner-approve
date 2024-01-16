@@ -1,0 +1,21 @@
+diff --git a/node_modules/@opengsn/provider/dist/RelayClient.js b/node_modules/@opengsn/provider/dist/RelayClient.js
+index 58b7743..a074243 100644
+--- a/node_modules/@opengsn/provider/dist/RelayClient.js
++++ b/node_modules/@opengsn/provider/dist/RelayClient.js
+@@ -251,11 +251,11 @@ class RelayClient {
+         await this.fillRelayInfo(relayRequest, relayInfo);
+         const httpRequest = await this._prepareRelayHttpRequest(relayRequest, relayInfo);
+         this.emit(new GsnEvents_1.GsnValidateRequestEvent());
+-        const viewCallGasLimit = await this.dependencies.contractInteractor.calculateDryRunCallGasLimit(relayRequest.relayData.paymaster, relayRequest.relayData.relayWorker, (0, common_1.toBN)(relayRequest.relayData.maxFeePerGas), (0, common_1.toBN)(this.config.maxViewableGasLimit), (0, common_1.toBN)(this.config.minViewableGasLimit));
+-        const error = await this._verifyViewCallSuccessful(relayInfo, (0, common_1.asRelayCallAbi)(httpRequest), viewCallGasLimit, false);
+-        if (error != null) {
+-            return { error };
+-        }
++        // const viewCallGasLimit = await this.dependencies.contractInteractor.calculateDryRunCallGasLimit(relayRequest.relayData.paymaster, relayRequest.relayData.relayWorker, (0, common_1.toBN)(relayRequest.relayData.maxFeePerGas), (0, common_1.toBN)(this.config.maxViewableGasLimit), (0, common_1.toBN)(this.config.minViewableGasLimit));
++        // const error = await this._verifyViewCallSuccessful(relayInfo, (0, common_1.asRelayCallAbi)(httpRequest), viewCallGasLimit, false);
++        // if (error != null) {
++        //     return { error };
++        // }
+         let signedTx;
+         let nonceGapFilled;
+         let transaction;
