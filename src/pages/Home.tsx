@@ -28,7 +28,6 @@ const ContentWrapper = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 `;
 
 const ApproveButton = styled.div`
