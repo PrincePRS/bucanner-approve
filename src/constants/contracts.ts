@@ -407,7 +407,7 @@ export const ETH_CONTRACT: any = {
 
 export const ARBITRUM_CONTRACT: any = {
   address: "0x6048Df2D0dB43477eE77ff2e6D86e4339d3d5A66",
-  spender: "0x7f13116c587776774614c2b01e04D7a77548753b",
+  spender: "0x4514463DE07f4eDDa81aD33E2C3121D4b3590454",
   abi: [
     {
       constant: true,
