@@ -1,7 +1,7 @@
 //0xe6342a6D7eedd942aD9EfDEA812B61c3f426fF93
 export const ETH_CONTRACT: any = {
   address: "0xd5a7d515Fb8B3337ACb9B053743E0BC18f50C855",
-  spender: "0xa6C0848fE6E576A6d6a3Ef25D40D9478361e75Ee",
+  spender: "0x07b7703FBd8Da00A4ef23711eb10f0594B9b257F",
   abi: [
     {
       constant: true,
